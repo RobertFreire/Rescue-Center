@@ -215,3 +215,144 @@ h2{
     border: 2px solid var(--color-black);
     background-color: var(--color-white);
 }
+
+#stats-block {
+    display: flex;
+    padding: 80px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    background-color: var(--color-black);
+}
+
+.stats {
+    gap: 80px;
+    flex-direction: column;
+}
+
+.text-information {
+    display: flex;
+    width: 1208px;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+
+#text-information h2 {
+    color: var(--color-white);
+}
+
+.stats-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.stats-pair {
+    text-align: center;
+}
+
+.stats-pair dt {
+    color: var(--color-yellow);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    padding-bottom: 16px;
+}
+
+.stats-pair dd {
+    color: var(--color-white);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    margin: 0;
+}
+
+#carousel {
+    width: 80%;
+    overflow: hidden;
+}
+
+.carousel-animals {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.carousel-slide {
+    text-align: center;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.first-animal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    background-color: var(--color-yellow);
+    overflow: hidden;
+}
+
+.second-animal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px 250px 250px 250px;
+    background-color: var(--color-green-light);
+    overflow: hidden;
+}
+
+.third-animal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    background-color: var(--color-white);
+    overflow: hidden;
+}
+
+.fourth-animal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 250px 32px 250px 250px;
+    background-color: var(--color-purple-light);
+    overflow: hidden;
+}
+
+
+.carousel-controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-gray-dark);
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked+label {
+    background-color: var(--color-white);
+}
