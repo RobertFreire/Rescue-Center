@@ -1,0 +1,28 @@
+<svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="32" height="33" fill="#E5E5E5"/>
+<g id="Desktop Page" clip-path="url(#clip0_0_1)">
+<rect width="1512" height="6134" transform="translate(-184 -739)" fill="#F5F5F5"/>
+<g id="Main_Screen">
+<rect width="1512" height="816" transform="translate(-184 -617)" fill="#F5F5F5"/>
+<g id="Main_Content">
+<g id="Info_Block">
+<g id="CTA_Block">
+<g id="Group_of_Buttons">
+<g id="Donate_Button">
+<rect x="-32" y="-15.5" width="177" height="64" rx="32" fill="#FF3D9A"/>
+<g id="Icon">
+<path id="Shape" d="M9.17254 5.82612C12.0736 5.10067 13.9784 6.00834 15.1382 7.16813C15.2645 7.29446 15.3813 7.42302 15.4892 7.55177C15.6158 7.70299 15.803 7.79035 16.0002 7.79035C16.1975 7.79034 16.3846 7.70298 16.5113 7.55176C16.6191 7.423 16.7359 7.29445 16.8623 7.16813C18.0221 6.0083 19.9271 5.1007 22.8287 5.82611C25.7269 6.55068 27.9142 8.7299 28.6442 11.4678C29.3791 14.224 28.6193 17.463 25.8046 20.2776C22.6904 23.3919 20.0321 26.0515 18.3591 27.7255C17.0575 29.028 14.9499 29.0286 13.6476 27.7266L6.19755 20.2776C3.38176 17.4623 2.62191 14.2233 3.35708 11.4672C4.08733 8.72945 6.27503 6.55068 9.17254 5.82612Z" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1512" height="6134" fill="white" transform="translate(-184 -739)"/>
+</clipPath>
+</defs>
+</svg>
