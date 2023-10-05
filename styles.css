@@ -181,7 +181,7 @@ h2{
 
 #animals{
     display: flex;
-    width: 584px;
+    width: 540px;
     height: 616px;
     flex-shrink: 0;
     align-content: stretch;
@@ -433,4 +433,70 @@ input[type="radio"]:checked+label {
     flex-wrap: wrap;
     align-content: space-between;
     flex-direction: row-reverse;
+}
+
+#adopt-info-block{
+    padding: 80px 0px 120px 0px;
+}
+
+.adopt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+#adopt-content-block{
+    display: flex;
+    width: 1208px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#adopt-image img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 480px;
+}
+
+.adopt-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.adopt-text h1{
+    font-size: 32px;
+    font-style: normal;
+    letter-spacing: -0.64px;
+    color: var(--color-black);
+    padding-inline-start: 5px;
+    padding: 5px;
+}
+
+.adopt-text li{
+    padding: 5px;
+}
+
+.btn.apply-to-adopt{
+    display: flex;
+    height: 64px;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 32px;
+    background: var(--color-black);
+    color: var(--color-white);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
 }
