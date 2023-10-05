@@ -107,3 +107,111 @@ h2{
     background-color: var(--color-pink);
     color: white;
 }
+
+.main-screen {
+    padding: 80px 0px 120px 0px;
+}
+
+.main-content {
+    padding: 0px 116px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    gap: 40px;
+}
+
+#info-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    flex-shrink: 0;
+}
+
+.text-block h1 {
+    color: var(--color-black);
+    word-wrap: break-word;
+}
+
+.text-block p {
+    color: var(--color-black);
+}
+
+#cta-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    padding-right: 28px;
+    align-self: stretch;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+}
+
+#cta-block h3 {
+    color: var(--color-black);
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    letter-spacing: -0.64px;
+    margin: 0;
+}
+
+#animals{
+    display: flex;
+    width: 584px;
+    height: 616px;
+    flex-shrink: 0;
+    align-content: stretch;
+    position: relative;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.dog-image{
+    position: absolute;
+    width: 268px;
+    height: 268px;
+    flex-shrink: 0;
+}
+
+.house-drawing{
+    top: -55%;
+    width: 160px;
+    height: 248px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.cat-image{
+    width: 377px;
+    height: 616px;
+    flex-shrink: 0;
+}
+
+.btn.apply-to-adopt {
+    border: 2px solid var(--color-black);
+    background-color: var(--color-white);
+}
