@@ -13,24 +13,26 @@
 </head>
 
 <body>
-    <nav class="navigation-bar">
-        <div class="all-options">
-            <div class="left-options">
-                <img src="src/image/Logo.png" alt="Rescue Center logo">
-                <ul class="nav-items">
-                    <li>Rescue Center</li>
-                    <li>Apply to Adopt</li>
-                    <li>Volunteer</li>
-                    <li>Ways to give</li>
-                    <li>Events</li>
-                </ul>
+    <header>
+        <nav class="navigation-bar">
+            <div class="all-options">
+                <div class="left-options">
+                    <img src="src/image/Logo.png" alt="Rescue Center logo">
+                    <ul class="nav-items">
+                        <li>Rescue Center</li>
+                        <li>Apply to Adopt</li>
+                        <li>Volunteer</li>
+                        <li>Ways to give</li>
+                        <li>Events</li>
+                    </ul>
+                </div>
+                <div class="right-options">
+                    <p><img src="src/image/Icon-phone.svg"> 631-249-7325</p>
+                    <button class="btn donate"> <img src="src/image/Icon-heart-white.svg">Donate</button>
+                </div>
             </div>
-            <div class="right-options">
-                <p><img src="src/image/Icon-phone.svg"> 631-249-7325</p>
-                <button class="btn donate"> <img src="src/image/Icon-heart-white.svg">Donate</button>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
     <hr>
     <main class="main-screen">
         <div class="main-content main">
@@ -313,6 +315,52 @@
             <h3 class="footer-text">​We are not just a rescue, <span class="footer-span">we are a refuge</span></h3>
         </div>
     </footer>
-</body>
 
+    <div id="adopt-modal">
+        <div class="content-modal">
+            <div class="text-information-adopt-modal">
+                <h1>Apply to Adopt</h1>
+                <p>Small text description can goes here</p>
+            </div>
+            <div class="form adopt-modal">
+                <div class="input email">
+                    <label for="email">EMAIL<span>*</span></label>
+                    <input type="email" id="email-modal" required>
+                </div>
+                <div class="input name">
+                    <label for="full-name">FULL NAME<span>*</span></label>
+                    <input type="text" id="full-name" required>
+                </div>
+                <div class="input date-birth">
+                    <label>DATE OF BIRTH<span>*</span></label>
+                    <div class="select-input">
+                        <select id="day" name="day" required>
+                            <option value="" disabled selected>Day</option>
+                        </select>
+                        <select id="month" name="month" required>
+                            <option value="" disabled selected>Month</option>
+                        </select>
+                        <select id="year" name="year" required>
+                            <option value="" disabled selected>Year</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="buttons-modal">
+                    <div class="policy-and-terms">
+                        <div class="checkbox-modal">
+                            <input type="checkbox" id="checkbox">
+                            <label for="checkbox"></label>
+                        </div>
+                        <p>I agree with <span>Privacy Policy</span> and <span>Terms of Conditions</span></p>
+                    </div>
+                </div>
+                <button class="btn wanna-adopt"><img src="/src/image/Shape.svg">I Wanna Adopt</button>
+                <button class="btn cancel" id="cancel"><img src="/src/image/CaretLeft.png">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+  
+
+</body>
 </html>
