@@ -1145,3 +1145,76 @@ input[type="radio"]:checked+label {
     background-color:#37383F;
 }
 
+/* Donate-Modal */
+
+#donate-modal{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.radios{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.wanna-help{
+    background-color: var(--color-pink);
+    color: var(--color-white);
+}
+
+.cancel-donate{
+    display: flex;
+    height: 64px;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 32px;
+    background-color: var(--color-gray-dark);
+    color: var(--color-white);
+}
+
+
+input[type="radio"] {
+  display: none;
+}
+.label-payment {
+  position: relative;
+  color: var(--color-blue-light);
+  font-family: "Poppins";
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8em;
+  border: 3px solid var(--color-blue-light);
+  padding: 1em 2em;
+  border-radius: 0.5em;
+}
+.label-payment:before {
+  content: "";
+  height: 2em;
+  width: 2em;
+  border: 3px solid var(--color-blue-light);
+  border-radius: 50%;
+}
+input[type="radio"]:checked + .label-payment:before {
+  height: 1em;
+  width: 1em;
+  border: 0.65em solid var(--color-white);
+  background-color: var(--color-blue-light);
+}
+input[type="radio"]:checked + .label-payment {
+  background-color: var(--color-blue-light);
+  color: var(--color-white);
+}
+
