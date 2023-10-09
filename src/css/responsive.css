@@ -103,8 +103,17 @@
         letter-spacing: -3px;
     }
 
+    .stats{
+        gap: 40px;
+    }
+
     .stats-list{
         flex-direction: column;
+    }
+
+    #carousel{
+        gap: 20px;
+        width: 100%;
     }
     
     .carousel-animals{
@@ -113,6 +122,13 @@
     
     .carousel-slide{
         flex: 0 0 100%;
+    }
+
+    .arrow{
+        display: flex;
+        align-items: center;
+        width: 50px;
+        height: auto;
     }
     
     .apply-to-adopt-info{

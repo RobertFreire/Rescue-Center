@@ -326,8 +326,11 @@ hr {
 }
 
 #carousel {
+    display: flex;
     width: 80%;
     overflow: hidden;
+    align-items: center;
+    gap: 40px;
 }
 
 .carousel-animals {
@@ -391,6 +394,14 @@ hr {
 .eighth-animal{
     border-radius: 250px 32px 250px 250px;
     background-color: var(--color-purple);
+}
+.arrow{
+    display: flex;
+    background-color: var(--color-white); 
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
 }
 
 .carousel-controls {
