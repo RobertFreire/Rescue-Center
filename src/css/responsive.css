@@ -192,4 +192,18 @@
         max-width: 70%;
     }
 
+    .cat-adopt{
+        position: relative;
+        margin-left: 0;
+        width: 175px;
+        height: 221.288px;  
+    }
+    
+    .dog-adopt{
+        position: relative;
+        margin-right: 0;
+        width: 175px;
+        height: 213.906px;
+    }
+
 }
