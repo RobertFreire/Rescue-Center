@@ -105,4 +105,39 @@
         letter-spacing: -3px;
     }
 
+    .stats-list{
+        flex-direction: column;
+    }
+    
+    .carousel-animals{
+        overflow-x: scroll;
+    }
+    
+    .carousel-slide{
+        flex: 0 0 100%;
+    }
+    
+    .apply-to-adopt-info{
+        padding-inline-start: 60px;
+    }
+    
+    #adopt-content-block{
+        flex-direction: column-reverse
+    }
+    
+    .adopt-text ul{
+        padding-inline-start: 60px;
+    }
+    
+    #adopt-image img{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .adopt-text h1{
+        font-size: 32px;
+        letter-spacing: -0.64px;
+    }
+
+
 }
