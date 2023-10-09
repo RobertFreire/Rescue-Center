@@ -1,0 +1,45 @@
+
+
+@media (max-width: 810px) {
+
+    #stats-block, #adopt-info-block, #subscribe-block, .footer{
+        padding: 80px 16px;
+    }
+
+    .navigation-bar {
+        padding: 32px 16px;
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center;
+        height: auto; 
+    }
+
+    .all-options{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.79%;
+        flex: 1 0 0;
+    }
+
+    .left-options{
+        flex-direction: column;
+        align-self: stretch;
+    }
+
+    .nav-items{
+        justify-content: center;
+        align-content: flex-start;
+        align-self: stretch;
+        flex-wrap: wrap;
+    }
+
+    .right-options{
+        justify-content: space-between;
+        align-content: center;
+        align-self: stretch;
+        flex-wrap: wrap;
+        gap: 0px
+    }
+
+}
