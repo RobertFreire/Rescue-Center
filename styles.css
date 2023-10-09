@@ -1182,35 +1182,35 @@ input[type="radio"]:checked+label {
 
 
 input[type="radio"] {
-  display: none;
+    display: none;
 }
 .label-payment {
-  position: relative;
-  color: var(--color-blue-light);
-  font-family: "Poppins";
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.8em;
-  border: 3px solid var(--color-blue-light);
-  padding: 1em 2em;
-  border-radius: 0.5em;
+    position: relative;
+    color: var(--color-blue-light);
+    font-family: "Poppins";
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8em;
+    border: 3px solid var(--color-blue-light);
+    padding: 1em 2em;
+    border-radius: 0.5em;
 }
 .label-payment:before {
-  content: "";
-  height: 2em;
-  width: 2em;
-  border: 3px solid var(--color-blue-light);
-  border-radius: 50%;
+    content: "";
+    height: 2em;
+    width: 2em;
+    border: 3px solid var(--color-blue-light);
+    border-radius: 50%;
 }
 input[type="radio"]:checked + .label-payment:before {
-  height: 1em;
-  width: 1em;
-  border: 0.65em solid var(--color-white);
-  background-color: var(--color-blue-light);
+    height: 0.5em;
+    width: 0.5em;
+    border: 0.65em solid var(--color-white);
+    background-color: var(--color-blue-light);
 }
 input[type="radio"]:checked + .label-payment {
-  background-color: var(--color-blue-light);
-  color: var(--color-white);
+    background-color: var(--color-blue-light);
+    color: var(--color-white);
 }
 
