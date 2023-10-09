@@ -42,4 +42,39 @@
         gap: 0px
     }
 
+    .main-screen {
+        display: flex;
+        padding: 32px 16px;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        align-self: stretch;
+    }
+    
+    .main-content{
+        max-width: 100%;
+        flex-direction: column;
+        flex: 1 0 0;
+    }
+    
+    #info-block{
+        align-items: center;
+        gap: 48px;
+        align-self: stretch;
+    }
+    
+    .text-block h1 {
+        font-size: 43px;
+        letter-spacing: -0.96px;
+    }
+    
+    #cta-block{ 
+        align-items: center;
+        text-align: center;
+    }
+    
+    .btn-container{
+        flex-direction: column;
+    }
+
 }
