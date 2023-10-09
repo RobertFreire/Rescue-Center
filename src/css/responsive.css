@@ -139,5 +139,31 @@
         letter-spacing: -0.64px;
     }
 
+    .cards{
+        display: none;
+    }
+    
+    .responsive{
+        display: flex;
+    }
+    
+    .cards-donations{
+        justify-content: stretch;
+        align-items: center;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .cards{
+        max-width: 100%;
+    }
+    
+    .card{
+        flex: 0 0 100%;
+        max-width: 80%;
+    }
+    
 
 }
