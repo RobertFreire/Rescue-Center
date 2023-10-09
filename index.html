@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Poppins:wght@700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
     <title>Rescue Center</title>
 </head>
 
@@ -32,8 +33,11 @@
                 </div>
             </div>
         </nav>
+        <div class="diviser">
+            <hr>
+        </div>
     </header>
-    <hr>
+
     <main class="main-screen">
         <div class="main-content main">
             <section id="info-block">
@@ -43,6 +47,9 @@
                         or neglected. We have already saved the lives of 10,000 animals. We are not just a rescue, we
                         are a refuge.</p>
                 </section>
+                <div class="animals-mobile">
+                    <img src="src/image/Dog-Img.png" alt="" class="dog-image">
+                </div>
                 <section id="cta-block">
                     <h3>Your Gift Helps Save Lives</h3>
                     <div class="btn-container">
@@ -55,7 +62,6 @@
                 <img src="src/image/House_Drawing.png" alt="" class="house-drawing">
                 <img src="src/image/Dog-Img.png" alt="" class="dog-image">
                 <img src="src/image/Cat-Img.png" alt="" class="cat-image">
-
             </div>
         </div>
     </main>
@@ -113,7 +119,7 @@
         <div class="main-content donation">
             <h2>With your donations we provide</h2>
             <div class="cards">
-                <div class="row">
+                <div class="row cards-donations">
                     <div class="card">
                         <div class="text-block donation-text">
                             <img src="src/image/Vector-house.svg" alt="">
@@ -121,7 +127,6 @@
                             <p>We provide shelter for many of our cats and dogs. In addition to a roof over their heads,
                                 we pay for heat, food, water, and electricity, and general maintenance.</p>
                         </div>
-
                     </div>
                     <div class="card">
                         <div class="text-block donation-text">
@@ -143,8 +148,7 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="row">
+                <div class="row cards-donations">
                     <div class="card">
                         <div class="text-block donation-text">
                             <img src="src/image/Vector-transport.svg" alt="">
@@ -175,6 +179,68 @@
                     </div>
                 </div>
             </div>
+
+            <div class="cards responsive">
+                <div class="row cards-donations">
+                    <div class="card">
+                        <div class="text-block donation-text">
+                            <img src="src/image/Vector-house.svg" alt="">
+                            <h2>Shelter</h2>
+                            <p>We provide shelter for many of our cats and dogs. In addition to a roof over their heads,
+                                we pay for heat, food, water, and electricity, and general maintenance.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="text-block donation-text">
+                            <img src="src/image/Vector-health.svg" alt="">
+                            <h2>Vetting </h2>
+                            <p>We provide vet care to our cats and dogs. We take care of general health assessments
+                                medications, vaccinations, spay/neuter procedures, and other surgeries.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="text-block donation-text">
+                            <img src="src/image/Vector-building.svg" alt="">
+                            <h2>Facilities</h2>
+                            <p>We currently utilize a facility in a dilapidated state, which has necessitated
+                                significant
+                                investments to make it usable again. We are still restoring the building to its full
+                                potential.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="text-block donation-text">
+                            <img src="src/image/Vector-transport.svg" alt="">
+                            <h2>Transport</h2>
+                            <p>Each year, we transport over 600 dogs and 350 cats from kill shelters and emergency
+                                distressing situations to hospitals or our shelter, providing them with a second chance
+                                at
+                                life.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="text-block donation-text">
+                            <img src="src/image/Vector-happy.svg">
+                            <h2>Fosters</h2>
+                            <p>We're lucky to have a group of individuals who generously foster our cats and dogs in
+                                their
+                                homes. We cover all their veterinary needs and provide necessary food supplies.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="text-block donation-text">
+                            <img src="src/image/Vector-bone.svg">
+                            <h2>Food</h2>
+                            <p>Each year, we nourish our cats and dogs with over 2,200 cans of wet food and 1,600 pounds
+                                of
+                                dry food to ensure their well-being and keep them content and thriving.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
     </section>
     <section id="adopt-info-block">
         <div class="main-content adopt">
@@ -276,21 +342,23 @@
 
                     <h3>Helps Save Lives</h3>
                 </div>
-                <div class="links-row">
-                    <a href=""> Adopt a pet</a>
-                    <a href="">Adoptables Dogs</a>
-                    <a href="">Adoptables Cats</a>
-                    <a href="">Become a Foster</a>
-                    <a href="">Rescue Center</a>
-                    <a href="">Get Involved</a>
-                </div>
-                <div class="links-row">
-                    <a href="">Ways to Donate</a>
-                    <a href="">Upcoming Events</a>
-                    <a href="">Outreach Programs</a>
-                    <a href="">Who We Are</a>
-                    <a href="">Contact Us</a>
-                    <a href="">Shop With Purpose</a>
+                <div class="frame-footer">
+                    <div class="links-row">
+                        <a href=""> Adopt a pet</a>
+                        <a href="">Adoptables Dogs</a>
+                        <a href="">Adoptables Cats</a>
+                        <a href="">Become a Foster</a>
+                        <a href="">Rescue Center</a>
+                        <a href="">Get Involved</a>
+                    </div>
+                    <div class="links-row">
+                        <a href="">Ways to Donate</a>
+                        <a href="">Upcoming Events</a>
+                        <a href="">Outreach Programs</a>
+                        <a href="">Who We Are</a>
+                        <a href="">Contact Us</a>
+                        <a href="">Shop With Purpose</a>
+                    </div>
                 </div>
                 <div class="contats-footer">
                     <div class="info-contats">
@@ -311,7 +379,9 @@
                     </div>
                 </div>
             </div>
-            <hr class="footer-diviser">
+            <div class="diviser">
+            <hr>
+        </div>
             <h3 class="footer-text">​We are not just a rescue, <span class="footer-span">we are a refuge</span></h3>
         </div>
     </footer>
@@ -323,16 +393,16 @@
                 <p>Small text description can goes here</p>
             </div>
             <div class="form adopt-modal">
-                <div class="input email">
+                <div class="input-modal email">
                     <label for="email">EMAIL<span>*</span></label>
-                    <input type="email" id="email-modal" required>
+                    <input type="email" id="email-modal-adopt" required>
                 </div>
-                <div class="input name">
+                <div class="input-modal name">
                     <label for="full-name">FULL NAME<span>*</span></label>
                     <input type="text" id="full-name" required>
                 </div>
-                <div class="input date-birth">
-                    <label>DATE OF BIRTH<span>*</span></label>
+                <div class="input-modal date-birth">
+                    <p>DATE OF BIRTH<span>*</span></p>
                     <div class="select-input">
                         <select id="day" name="day" required>
                             <option value="" disabled selected>Day</option>
@@ -364,25 +434,25 @@
         <div class="content-modal">
             <h1>Choose your Donate </h1>
             <div class="form donate-form">
-                <div class="input email">
+                <div class="input-modal email">
                     <label for="email">EMAIL<span>*</span></label>
-                    <input type="email" id="email-modal" required>
+                    <input type="email" id="email-modal-donate" required>
                 </div>
-                <div class="input money">
+                <div class="input-modal money">
                     <label for="money">HOW MUCH CAN YOU HELP?<span>*</span></label>
                     <input type="number" id="money" min="1">
                 </div>
-                <div class="input payment">
-                    <label for="payment">PAYMENT METHOD<span>*</span></label>
+                <div class="input-modal payment">
+                    <p for="payment">PAYMENT METHOD<span>*</span></p>
                     <div class="radios">
-                        <input type="radio" name="radio" id="pix" checked>
-                        <label class="label-payment" id="pix">pix</label>
+                        <input type="radio" name="radio" id="pix">
+                        <label class="label-payment" for="pix">pix</label>
 
                         <input type="radio" name="radio" id="credit-card">
-                        <label class="label-payment" id="credit-card">Credit Card</label>
+                        <label class="label-payment" for="credit-card">Credit Card</label>
 
                         <input type="radio" name="radio" id="paypal">
-                        <label class="label-payment" id="paypal">Paypal</label>
+                        <label class="label-payment" for="paypal">Paypal</label>
                     </div>
                 </div>
                 <button class="btn wanna-help"><img src="/src/image/Icon-heart-white.svg">I Wanna Help</button>
@@ -390,7 +460,6 @@
             </div>
         </div>
     </div>
-
 
 </body>
 
