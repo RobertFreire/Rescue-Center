@@ -184,5 +184,12 @@
         align-items: flex-end;
     }
     
+    .difference-cards{
+        flex-wrap: wrap;
+    }
+    
+    .card-difference{
+        max-width: 70%;
+    }
 
 }
