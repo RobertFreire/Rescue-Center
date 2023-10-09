@@ -206,4 +206,20 @@
         height: 213.906px;
     }
 
+    .subscribe-form{
+        flex-direction: column;
+    }
+    
+    #email{
+        padding: 16px 70px 16px 24px
+    }
+    
+    .subscribe-text p{
+        max-width: 95%;
+    }
+    
+    .subscribe-text h2{
+        max-width: 85%;
+    }
+
 }
