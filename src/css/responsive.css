@@ -275,4 +275,19 @@
         flex: 0 0 60%;
     }
 
+    /* Modal Donate Responsive */
+
+    .content-modal h1{
+        font-size: 35px;
+    }
+
+    .form{
+        gap: 5px;
+    }
+
+    .wanna-help, .cancel-donate{
+        height: 50px;
+    }
+
+
 }
