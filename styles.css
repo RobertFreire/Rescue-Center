@@ -74,6 +74,7 @@ h2{
     flex-direction: column;  
 }
 
+
 .all-options{
     display: flex;
     width: 1208px;
@@ -105,10 +106,10 @@ h2{
     line-height: 32px;
 }
 
-.hr {
+hr {
     border: none;
     border-top: 2px solid #000;
-    width: 100%;
+    width: 1208px;
     margin: 20px 0;
 }
 
@@ -133,6 +134,12 @@ h2{
     line-height: 32px;
 }
 
+.diviser{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .main-screen {
     padding: 80px 0px 120px 0px;
     justify-content: center;
@@ -143,12 +150,13 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1208px;
+    max-width: 1208px;
 }
 
 .main {
     gap: 40px;
 }
+
 
 #info-block {
     display: flex;
@@ -157,6 +165,14 @@ h2{
     align-items: flex-start;
     gap: 24px;
     padding: 0px 40px;
+}
+
+@media (max-width: 430px) {
+    #info-block{
+        align-items: center;
+        gap: 48px;
+        align-self: stretch;
+    }
 }
 
 .text-block {
@@ -168,6 +184,7 @@ h2{
     align-self: stretch;
     flex-shrink: 0;
 }
+
 
 .text-block h1 {
     color: var(--color-black);
@@ -184,7 +201,6 @@ h2{
     justify-content: center;
     align-items: flex-start;
     gap: 24px;
-    padding-right: 28px;
     align-self: stretch;
 }
 
@@ -206,6 +222,7 @@ h2{
     margin: 0;
 }
 
+
 #animals{
     display: flex;
     width: 540px;
@@ -216,6 +233,10 @@ h2{
     justify-content: flex-start;
     align-items: flex-end;
     flex-wrap: wrap;
+}
+
+.animals-mobile{
+    display: none;
 }
 
 .dog-image{
@@ -254,14 +275,14 @@ h2{
     background-color: var(--color-black);
 }
 
+
 .stats {
     gap: 80px;
     flex-direction: column;
 }
 
-.text-information {
+#text-information {
     display: flex;
-    width: 1208px;
     flex-direction: column;
     align-items: center;
     gap: 80px;
@@ -425,6 +446,9 @@ input[type="radio"]:checked+label {
     display: flex;
     gap: 60px;
 }
+.responsive{
+    display: none;
+}
 
 .cards h2{
     color: var(--white, #FFF);
@@ -490,11 +514,10 @@ input[type="radio"]:checked+label {
 
 #adopt-content-block{
     display: flex;
-    width: 1208px;
     justify-content: center;
     align-items: center;
     gap: 40px;
-}
+} 
 
 #adopt-image img{
     display: flex;
@@ -506,12 +529,7 @@ input[type="radio"]:checked+label {
 
 .adopt-text{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     gap: 32px;
-    flex: 1 0 0;
-    align-self: stretch;
 }
 
 .adopt-text h1{
@@ -528,19 +546,10 @@ input[type="radio"]:checked+label {
 }
 
 .btn.apply-to-adopt-info-block{
-    display: flex;
-    height: 64px;
-    padding: 16px 32px;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    border-radius: 32px;
     background: var(--color-black);
     color: var(--color-white);
-    font-family: Poppins;
-    font-size: 20px;
-    font-style: normal;
 }
+
 
 #difference-block{
     display: flex;
@@ -670,7 +679,6 @@ input[type="radio"]:checked+label {
 
 #cta-text{
     display: flex;
-    width: 1208px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -687,7 +695,6 @@ input[type="radio"]:checked+label {
 
 .button-group{
     display: flex;
-    width: 1208px;
     justify-content: center;
     align-items: center;
     gap: 24px;
@@ -706,7 +713,7 @@ input[type="radio"]:checked+label {
 
 .dog-adopt{
     position: absolute;
-    margin-right: -1000px;
+    margin-right: -1000px;;
 }
 
 .view-adoptables{
@@ -732,7 +739,6 @@ input[type="radio"]:checked+label {
 
 .subscribe{
     display: flex;
-    width: 1208px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -741,7 +747,6 @@ input[type="radio"]:checked+label {
 
 .subscribe-text{
     display: flex;
-    width: 1208px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -761,26 +766,20 @@ input[type="radio"]:checked+label {
 
 .subscribe-form{
     display: flex;
-    width: 1208px;
     justify-content: center;
     align-items: center;
     gap: 24px;
 }
 
-#email{
+#email{ 
     display: flex;
-    width: 310px;
-    height: 27px;
     padding: 16px 136px 16px 24px;
-    align-items: center;
     gap: 8px;
-    flex-shrink: 0;
     border-radius: 32px;
     border: 2px solid var(--color-white);
     background-color: var(--color-purple);
     font-size: 20px;
     color: var(--color-white);
-    line-height: 160%;
 }
 
 #submit{
@@ -808,7 +807,6 @@ input[type="radio"]:checked+label {
 
 .footer-content{
     display: flex;
-    width: 1208px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -817,14 +815,12 @@ input[type="radio"]:checked+label {
 
 .links-block{
     display: flex;
-    width: 1208px;
     justify-content: space-between;
     align-items: flex-start;
 }
 
 .links-row{
-    display: flex;
-    width: 272px;
+    display: flex;  
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
@@ -863,6 +859,11 @@ input[type="radio"]:checked+label {
     margin: 0;
 }
 
+.frame-footer{
+    display: flex;
+    gap: 100px;
+    padding: 0px 100px;
+}
 
 .links-row a{
     text-decoration: none;
@@ -923,12 +924,7 @@ input[type="radio"]:checked+label {
     align-self: stretch;
 }
 
-.footer-diviser{
-    border: none;
-    border-top: 2px solid #000;
-    width: 100%;
-    margin: 0;
-}
+
 
 .footer-text{
     font-family: Poppins;
@@ -1011,7 +1007,7 @@ input[type="radio"]:checked+label {
     gap: 24px;
 }
 
-.input{
+.input-modal{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1019,7 +1015,7 @@ input[type="radio"]:checked+label {
     align-self: stretch;
 }
 
-.input label{
+.input-modal label, p{
     color: var(--pink, #FF3D9A);
     font-family: Poppins;
     font-size: 12px;
@@ -1027,7 +1023,7 @@ input[type="radio"]:checked+label {
     font-weight: 700;
 }
 
-.input input{
+.input-modal input{
     display: flex;
     padding: 16px;
     align-items: center;
@@ -1038,7 +1034,7 @@ input[type="radio"]:checked+label {
     background: var(--white, #FFF);
 }
 
-.input span{
+.input-modal span{
     color: var(--blue-light, #3F96FC);
     font-family: Poppins;
     font-size: 12px;
