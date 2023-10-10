@@ -159,6 +159,9 @@
     
     .responsive{
         display: flex;
+        max-width: 100%;
+        gap: 20px;
+        flex-direction: row;
     }
     
     .cards-donations{
@@ -170,13 +173,17 @@
         width: 100%;
     }
     
-    .cards{
-        max-width: 100%;
-    }
     
     .card{
         flex: 0 0 100%;
-        max-width: 80%;
+        max-width: 70%;
+        max-height: 100%;
+        height: 515px;
+    }
+
+    .cards-arrow{
+        width: 50px;
+        height: 50px;
     }
 
     .button-group{
