@@ -209,10 +209,59 @@ function adoptModalEvents() {
 
 }
 
+function donateModalEvents() {
+    const emailInput = document.getElementById('email-modal-donate') as HTMLInputElement;
+    const moneyInput = document.getElementById('money') as HTMLInputElement;
+    const pixRadio = document.getElementById('pix') as HTMLInputElement;
+    const creditCardRadio = document.getElementById('credit-card') as HTMLInputElement;
+    const paypalRadio = document.getElementById('paypal') as HTMLInputElement;
+    const donateButton = document.querySelector('.wanna-help') as HTMLButtonElement;
+
+    const emailError = document.getElementById('email-error') as HTMLSpanElement;
+    const moneyError = document.getElementById('money-error') as HTMLSpanElement;
+    const paymentError = document.getElementById('payment-error') as HTMLSpanElement;
+
+
+
+    function validate() {
+        const email = emailInput.value;
+        const money = parseFloat(moneyInput.value);
+        const paymentMethod = pixRadio.checked || creditCardRadio.checked || paypalRadio.checked;
+
+        let validation = true;
+
+
+        if (!email) {
+            emailError.style.display = 'block';
+            validation = false;
+        }
+
+        if (!money || money < 1) {
+            moneyError.style.display = 'block';
+            validation = false;
+        }
+
+        if (!paymentMethod) {
+            paymentError.style.display = 'block';
+            validation = false;
+        }
+
+        return validation;
+    }
+
+
+    donateButton.addEventListener('click', () => {
+        if (validate()) {
+            window.location.href = 'sucess-page.html'
+        }
+    })
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-    
-    carouselEvents();
+
     buttonEvents();
+    carouselEvents();
     adoptModalEvents();
+    donateModalEvents();
 
 });

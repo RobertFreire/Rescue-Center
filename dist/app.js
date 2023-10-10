@@ -171,8 +171,44 @@ function adoptModalEvents() {
         }
     });
 }
+function donateModalEvents() {
+    const emailInput = document.getElementById('email-modal-donate');
+    const moneyInput = document.getElementById('money');
+    const pixRadio = document.getElementById('pix');
+    const creditCardRadio = document.getElementById('credit-card');
+    const paypalRadio = document.getElementById('paypal');
+    const donateButton = document.querySelector('.wanna-help');
+    const emailError = document.getElementById('email-error');
+    const moneyError = document.getElementById('money-error');
+    const paymentError = document.getElementById('payment-error');
+    function validate() {
+        const email = emailInput.value;
+        const money = parseFloat(moneyInput.value);
+        const paymentMethod = pixRadio.checked || creditCardRadio.checked || paypalRadio.checked;
+        let validation = true;
+        if (!email) {
+            emailError.style.display = 'block';
+            validation = false;
+        }
+        if (!money || money < 1) {
+            moneyError.style.display = 'block';
+            validation = false;
+        }
+        if (!paymentMethod) {
+            paymentError.style.display = 'block';
+            validation = false;
+        }
+        return validation;
+    }
+    donateButton.addEventListener('click', () => {
+        if (validate()) {
+            window.location.href = 'sucess-page.html';
+        }
+    });
+}
 document.addEventListener('DOMContentLoaded', () => {
     carouselEvents();
     buttonEvents();
     adoptModalEvents();
+    donateModalEvents();
 });
