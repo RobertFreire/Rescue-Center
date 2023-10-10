@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Poppins:wght@700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="src/css/responsive.css">
+    <script src="dist/app.js"></script>
     <title>Rescue Center</title>
 </head>
 
@@ -126,7 +127,7 @@
             <h2>With your donations we provide</h2>
             <div class="cards">
                 <div class="row cards-donations">
-                    <div class="card">
+                    <div class="card ">
                         <div class="text-block donation-text">
                             <img src="src/image/Vector-house.svg" alt="">
                             <h2>Shelter</h2>
@@ -191,7 +192,7 @@
                     <img src="src/image/Icon-arrow-left.svg">
                 </div>
                 <div class="row cards-donations">
-                    <div class="card">
+                    <div class="card responsive-card">
                         <div class="text-block donation-text">
                             <img src="src/image/Vector-house.svg" alt="">
                             <h2>Shelter</h2>
@@ -199,7 +200,7 @@
                                 we pay for heat, food, water, and electricity, and general maintenance.</p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card responsive-card">
                         <div class="text-block donation-text">
                             <img src="src/image/Vector-health.svg" alt="">
                             <h2>Vetting </h2>
@@ -207,7 +208,7 @@
                                 medications, vaccinations, spay/neuter procedures, and other surgeries.</p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card responsive-card">
                         <div class="text-block donation-text">
                             <img src="src/image/Vector-building.svg" alt="">
                             <h2>Facilities</h2>
@@ -218,7 +219,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card responsive-card">
                         <div class="text-block donation-text">
                             <img src="src/image/Vector-transport.svg" alt="">
                             <h2>Transport</h2>
@@ -228,7 +229,7 @@
                                 life.</p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card responsive-card">
                         <div class="text-block donation-text">
                             <img src="src/image/Vector-happy.svg">
                             <h2>Fosters</h2>
@@ -237,7 +238,7 @@
                                 homes. We cover all their veterinary needs and provide necessary food supplies.</p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card responsive-card">
                         <div class="text-block donation-text">
                             <img src="src/image/Vector-bone.svg">
                             <h2>Food</h2>
@@ -271,7 +272,7 @@
                         <li>Be ready to adopt within 7-10 days</li>
                     </ul>
                     <div class="apply-to-adopt-info">
-                        <button class="btn apply-to-adopt-info-block">Apply to Adopt</button>
+                        <button class="btn apply-to-adopt info-block-button">Apply to Adopt</button>
                     </div>
                 </section>
             </section>
@@ -290,7 +291,7 @@
                         <h2>Adopt or Foster</h2>
                         <p>Provide a forever or temporary home to a homeless animal.</p>
                     </div>
-                    <button>View Adoptables</button>
+                    <button class="view-adoptables">View Adoptables</button>
                 </div>
                 <div class="card-difference volunteer">
                     <div class="text-block difference-cards-text">
@@ -327,7 +328,7 @@
                 <h3>Browse our adorable adoptables</h3>
                 <div class="button-group">
                     <button class="btn view-adoptables">View Adoptables</button>
-                    <button class="btn apply-to-adopt-block">Apply to Adopt</button>
+                    <button class="btn apply-to-adopt adopt-block-button">Apply to Adopt</button>
                 </div>
             </section>
         </section>
@@ -408,10 +409,12 @@
                 <div class="input-modal email">
                     <label for="email">EMAIL<span>*</span></label>
                     <input type="email" id="email-modal-adopt" required>
+                    <span class="error-message" id="email-error">Please enter a valid email address.</span>
                 </div>
                 <div class="input-modal name">
                     <label for="full-name">FULL NAME<span>*</span></label>
                     <input type="text" id="full-name" required>
+                    <span class="error-message" id="name-error">Please enter your full name.</span>
                 </div>
                 <div class="input-modal date-birth">
                     <p>DATE OF BIRTH<span>*</span></p>
@@ -426,6 +429,7 @@
                             <option value="" disabled selected>Year</option>
                         </select>
                     </div>
+                    <span class="error-message" id="dob-error">Please select your date of birth.</span>
                 </div>
                 <div class="buttons-modal">
                     <div class="policy-and-terms">
@@ -436,8 +440,9 @@
                         <p>I agree with <span>Privacy Policy</span> and <span>Terms of Conditions</span></p>
                     </div>
                 </div>
+                <span class="error-message" id="checkbox-error">You must agree to the terms and privacy policy.</span>
                 <button class="btn wanna-adopt"><img src="/src/image/Shape.svg">I Wanna Adopt</button>
-                <button class="btn cancel" id="cancel"><img src="/src/image/CaretLeft.png">Cancel</button>
+                <button class="btn cancel" id="cancel" data-modal="adopt-modal" > <img src="/src/image/CaretLeft.png">Cancel</button>
             </div>
         </div>
     </div>
@@ -449,10 +454,12 @@
                 <div class="input-modal email">
                     <label for="email">EMAIL<span>*</span></label>
                     <input type="email" id="email-modal-donate" required>
+                    <span class="error-message" id="email-error">Please enter a valid email address.</span>
                 </div>
                 <div class="input-modal money">
                     <label for="money">HOW MUCH CAN YOU HELP?<span>*</span></label>
                     <input type="number" id="money" min="1">
+                    <span class="error-message" id="money-error">Please enter a valid donation amount.</span>
                 </div>
                 <div class="input-modal payment">
                     <p for="payment">PAYMENT METHOD<span>*</span></p>
@@ -466,13 +473,13 @@
                         <input type="radio" name="radio" id="paypal">
                         <label class="label-payment" for="paypal">Paypal</label>
                     </div>
+                    <span class="error-message" id="payment-error">Please select a payment method.</span>
                 </div>
                 <button class="btn wanna-help"><img src="/src/image/Icon-heart-white.svg">I Wanna Help</button>
-                <button class="btn cancel-donate"><img src="/src/image/CaretLeft.png">Cancel</button>
+                <button class="btn cancel cancel-donate" data-modal="donate-modal"><img src="/src/image/CaretLeft.png">Cancel</button>
             </div>
         </div>
     </div>
-
 </body>
 
 </html>
