@@ -954,7 +954,7 @@ input[type="radio"]:checked+label {
 /* MODAL */ 
 
 #adopt-modal{
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -989,7 +989,7 @@ input[type="radio"]:checked+label {
 }
 
 .text-information-adopt-modal h1{
-    color: var(--black, #1E1F27);
+    color: var(--color-black);
     text-align: center;
     font-family: Poppins;
     font-size: 48px;
@@ -1001,7 +1001,7 @@ input[type="radio"]:checked+label {
 }
 
 .text-information-adopt-modal p{
-    color: var(--black, #1E1F27);
+    color: var(--color-black);
     text-align: center;
     font-family: Poppins;
     font-size: 18px;
@@ -1028,7 +1028,7 @@ input[type="radio"]:checked+label {
 }
 
 .input-modal label{
-    color: var(--pink, #FF3D9A);
+    color: var(--color-pink);
     font-family: Poppins;
     font-size: 12px;
     font-style: normal;
@@ -1036,7 +1036,7 @@ input[type="radio"]:checked+label {
 }
 
 .input-modal p{
-    color: var(--pink, #FF3D9A);
+    color: var(--color-pink);
     font-family: Poppins;
     font-size: 12px;
     font-style: normal;
@@ -1050,12 +1050,12 @@ input[type="radio"]:checked+label {
     gap: 10px;
     align-self: stretch;
     border-radius: 8px;
-    border: 1px solid var(--purple-light, #937AFF);
-    background: var(--white, #FFF);
+    border: 1px solid var(--color-purple-light);
+    background: var(--color-white);
 }
 
 .input-modal span{
-    color: var(--blue-light, #3F96FC);
+    color: var(--color-blue-light);
     font-family: Poppins;
     font-size: 12px;
 }
@@ -1074,8 +1074,8 @@ input[type="radio"]:checked+label {
     gap: 8px;
     flex: 1 0 0;
     border-radius: 8px;
-    border: 1px solid var(--blue-light, #3F96FC);
-    background: var(--white, #FFF);
+    border: 1px solid var(--color-blue-light);
+    background: var(--color-white);
 }
 
 .buttons-modal{
@@ -1089,6 +1089,10 @@ input[type="radio"]:checked+label {
     display: flex;
     gap: 15px;
     align-items: center;
+}
+
+.policy-and-terms span{
+    color: var(--color-pink);
 }
 
 .checkbox-modal{
@@ -1126,8 +1130,8 @@ input[type="radio"]:checked+label {
 }
   
 .checkbox-modal input[type="checkbox"]:checked + label {
-    background-color: #04C27F;
-    border-color: #04C27F;
+    background-color: var(--color-green-light);
+    border-color: var(--color-green-light);
 }
   
 .checkbox-modal input[type="checkbox"]:checked + label:after {
@@ -1154,11 +1158,11 @@ input[type="radio"]:checked+label {
 
 
 .wanna-adopt{
-    background-color: #66bb6a;
+    background-color: var(--color-green);
 }
 
 .cancel{
-    background-color:#37383F;
+    background-color:var(--color-gray-dark);
 }
 
 /* Donate-Modal */

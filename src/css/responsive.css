@@ -305,7 +305,7 @@
     }
 
     .form{
-        gap: 5px;
+        gap: 10px;
         width: 100%;
     }
 
@@ -320,7 +320,13 @@
         width: 20px;
     }
 
+    .policy-and-terms p{
+        font-size: 10px;
+    }
 
+    .wanna-adopt, .cancel{
+        width: 95%;
+    }
 
 
 }
