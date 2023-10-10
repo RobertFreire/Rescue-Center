@@ -1,18 +1,21 @@
 @media (max-width: 810px) {
 
-    #stats-block, #adopt-info-block, #subscribe-block, .footer{
+    #stats-block,
+    #adopt-info-block,
+    #subscribe-block,
+    .footer {
         padding: 80px 16px;
     }
 
     .navigation-bar {
         padding: 32px 16px;
-        flex-direction: row; 
-        justify-content: space-between; 
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
-        height: auto; 
+        height: auto;
     }
 
-    .all-options{
+    .all-options {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -20,19 +23,19 @@
         flex: 1 0 0;
     }
 
-    .left-options{
+    .left-options {
         flex-direction: column;
         align-self: stretch;
     }
 
-    .nav-items{
+    .nav-items {
         justify-content: center;
         align-content: flex-start;
         align-self: stretch;
         flex-wrap: wrap;
     }
 
-    .right-options{
+    .right-options {
         justify-content: space-between;
         align-content: center;
         align-self: stretch;
@@ -48,107 +51,107 @@
         gap: 40px;
         align-self: stretch;
     }
-    
-    .main-content{
+
+    .main-content {
         max-width: 100%;
         flex-direction: column;
         flex: 1 0 0;
     }
-    
-    #info-block{
+
+    #info-block {
         align-items: center;
         gap: 48px;
         align-self: stretch;
     }
-    
+
     .text-block h1 {
         font-size: 43px;
         letter-spacing: -0.96px;
     }
-    
-    #cta-block{ 
+
+    #cta-block {
         align-items: center;
         text-align: center;
     }
-    
-    .btn-container{
+
+    .btn-container {
         flex-direction: column;
     }
 
-    #animals{
+    #animals {
         display: none;
     }
-    
-    .animals-mobile{
+
+    .animals-mobile {
         display: flex;
     }
-    
-    .dog-image{
+
+    .dog-image {
         position: relative;
     }
-    
+
     #text-information h2 {
         font-size: 48px;
         letter-spacing: -0.96px;
     }
-    
-    .text{
+
+    .text {
         gap: 0;
         align-items: center;
         justify-content: space-between;
     }
-    
-    .text h2{
+
+    .text h2 {
         font-size: 48px;
         letter-spacing: -3px;
     }
 
-    .stats{
+    .stats {
         gap: 40px;
     }
 
-    .stats-list{
+    .stats-list {
         flex-direction: column;
     }
 
-    #carousel{
+    #carousel {
         gap: 20px;
         width: 100%;
     }
-    
-    .carousel-animals{
+
+    .carousel-animals {
         overflow-x: scroll;
     }
-    
-    .carousel-slide{
+
+    .carousel-slide {
         flex: 0 0 100%;
     }
 
-    .arrow{
+    .arrow {
         display: flex;
         align-items: center;
         width: 50px;
         height: auto;
     }
-    
-    .apply-to-adopt-info{
+
+    .apply-to-adopt-info {
         padding-inline-start: 60px;
     }
-    
-    #adopt-content-block{
+
+    #adopt-content-block {
         flex-direction: column-reverse
     }
-    
-    .adopt-text ul{
+
+    .adopt-text ul {
         padding-inline-start: 60px;
     }
-    
-    #adopt-image img{
+
+    #adopt-image img {
         height: 100%;
         width: 100%;
     }
-    
-    .adopt-text h1{
+
+    .adopt-text h1 {
         font-size: 32px;
         letter-spacing: -0.64px;
     }
@@ -186,73 +189,73 @@
         height: 50px;
     }
 
-    .button-group{
+    .button-group {
         flex-direction: column;
     }
-    
-    #cta-text{
+
+    #cta-text {
         text-align: center;
     }
-    
-    #adopt-block{
+
+    #adopt-block {
         padding: 80px 0px 0px 0px;
         flex-direction: column-reverse;
         overflow: hidden;
     }
-    
-    .image-animal-adopt{
+
+    .image-animal-adopt {
         position: relative;
         justify-content: center;
         grid-column-gap: 51%;
         align-items: flex-end;
     }
-    
-    .difference-cards{
+
+    .difference-cards {
         flex-wrap: wrap;
     }
-    
-    .card-difference{
+
+    .card-difference {
         max-width: 70%;
     }
 
-    .cat-adopt{
+    .cat-adopt {
         position: relative;
         margin-left: 0;
         width: 175px;
-        height: 221.288px;  
+        height: 221.288px;
     }
-    
-    .dog-adopt{
+
+    .dog-adopt {
         position: relative;
         margin-right: 0;
         width: 175px;
         height: 213.906px;
     }
 
-    .subscribe-form{
+    .subscribe-form {
         flex-direction: column;
     }
-    
-    #email{
+
+    #email {
         padding: 16px 70px 16px 24px
     }
-    
-    .subscribe-text p{
+
+    .subscribe-text p {
         max-width: 95%;
     }
-    
-    .subscribe-text h2{
+
+    .subscribe-text h2 {
         max-width: 85%;
     }
 
-    .links-block{
+    .links-block {
         flex-direction: column;
         gap: 40px;
         align-self: center;
         align-items: center;
     }
-    
-    .frame-footer{
+
+    .frame-footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -261,72 +264,77 @@
         gap: 0;
         width: 112%;
     }
-    
-    .links-row a{
+
+    .links-row a {
         font-size: 16px;
     }
-    
-    .logo-image{
+
+    .logo-image {
         width: 40%;
         height: auto;
     }
-    
-    .logo-footer{
+
+    .logo-footer {
         align-items: center;
     }
-    
-    .logo-footer h2{
+
+    .logo-footer h2 {
         text-align: center;
     }
-    
-    .contats-footer{
+
+    .contats-footer {
         width: 100%;
     }
-    
-    .social-contats{
+
+    .social-contats {
         justify-content: center;
     }
-    
-    .footer-text{
+
+    .footer-text {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 12px;
     }
 
-    .adoptables-images{
+    .adoptables-images {
         flex: 0 0 60%;
     }
 
     /* Modal Donate Responsive */
 
-    .content-modal h1{
+    .content-modal h1 {
         font-size: 35px;
     }
 
-    .form{
+    .form {
         gap: 10px;
         width: 100%;
     }
 
-    .wanna-help, .cancel-donate{
+    .wanna-help,
+    .cancel-donate {
         height: 50px;
     }
 
     /* Adopt Modal */
 
-    .checkbox-modal label{
+    .checkbox-modal label {
         height: 20px;
         width: 20px;
     }
 
-    .policy-and-terms p{
+    .policy-and-terms p {
         font-size: 10px;
     }
 
-    .wanna-adopt, .cancel{
+    .wanna-adopt,
+    .cancel {
         width: 95%;
     }
 
+    .sucess-dog img{
+        height: 421px;
+    }
 
 }
