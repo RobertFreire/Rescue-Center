@@ -103,7 +103,76 @@ function carouselEvents() {
     });
     showSlides();
 }
+function adoptModalEvents() {
+    const applyButton = document.querySelector('.wanna-adopt');
+    const emailInput = document.getElementById('email-modal-adopt');
+    const fullNameInput = document.getElementById('full-name');
+    const checkbox = document.getElementById('checkbox');
+    const daySelect = document.getElementById('day');
+    const monthSelect = document.getElementById('month');
+    const yearSelect = document.getElementById('year');
+    const emailError = document.getElementById('email-error');
+    const fullNameError = document.getElementById('name-error');
+    const dobError = document.getElementById('dob-error');
+    const checkboxError = document.getElementById('checkbox-error');
+    function DaySelect() {
+        for (let day = 1; day <= 31; day++) {
+            const option = new Option(day.toString(), day.toString());
+            daySelect.appendChild(option);
+        }
+    }
+    function MonthSelect() {
+        const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        for (let i = 0; i < months.length; i++) {
+            const option = new Option(months[i], (i + 1).toString());
+            monthSelect.appendChild(option);
+        }
+    }
+    function YearSelect() {
+        const currentYear = new Date().getFullYear();
+        const startYear = 1900;
+        for (let year = currentYear; year >= startYear; year--) {
+            const option = new Option(year.toString(), year.toString());
+            yearSelect.appendChild(option);
+        }
+    }
+    DaySelect();
+    MonthSelect();
+    YearSelect();
+    function validate() {
+        const email = emailInput.value;
+        const fullName = fullNameInput.value;
+        const day = daySelect.value;
+        const month = monthSelect.value;
+        const year = yearSelect.value;
+        const agreedToTerms = checkbox.checked;
+        let validation = true;
+        if (!email) {
+            emailError.style.display = 'block';
+            validation = false;
+        }
+        if (!fullName) {
+            fullNameError.style.display = 'block';
+            validation = false;
+        }
+        if (day === '' || month === '' || year === '') {
+            dobError.style.display = 'block';
+            validation = false;
+        }
+        if (!agreedToTerms) {
+            checkboxError.style.display = 'block';
+            validation = false;
+        }
+        return validation;
+    }
+    applyButton.addEventListener('click', () => {
+        if (validate()) {
+            window.location.href = 'sucess-page.html';
+        }
+    });
+}
 document.addEventListener('DOMContentLoaded', () => {
     carouselEvents();
     buttonEvents();
+    adoptModalEvents();
 });
