@@ -1,6 +1,6 @@
 "use strict";
 function buttonEvents() {
-    const donateButton = document.querySelectorAll('.btn.donate');
+    const donateButton = document.querySelectorAll('.donate');
     const adoptButton = document.querySelectorAll('.btn.apply-to-adopt');
     const viewAdoptablesButton = document.querySelectorAll('.view-adoptables');
     const backButton = document.querySelectorAll('.back-button');
@@ -33,9 +33,11 @@ function buttonEvents() {
             }
         });
     }
-    donateButton.forEach(button => {
-        button.addEventListener('click', () => openModal('donate-modal'));
-    });
+    if (donateButton) {
+        donateButton.forEach(button => {
+            button.addEventListener('click', () => openModal('donate-modal'));
+        });
+    }
     adoptButton.forEach(button => {
         button.addEventListener('click', () => openModal('adopt-modal'));
     });
@@ -56,53 +58,6 @@ function buttonEvents() {
         });
     }
 }
-function carouselEvents() {
-    const prevBtn = document.querySelector('.arrow.left');
-    const nextBtn = document.querySelector('.arrow.right');
-    const slides = document.querySelectorAll('.carousel-slide');
-    const radioButtons = document.querySelectorAll('input[name="carousel-radio"]');
-    const totalSlides = slides.length;
-    const slidesPerView = 4;
-    let currentSlide = 0;
-    function showSlides() {
-        slides.forEach((slide, index) => {
-            let newIndex = (index + currentSlide) % totalSlides;
-            if (newIndex < 0) {
-                newIndex = totalSlides + newIndex;
-            }
-            slide.style.display = 'block';
-            slide.style.order = ((index - currentSlide + totalSlides) % totalSlides + slidesPerView) % slidesPerView + '';
-        });
-        radioButtons[currentSlide].checked = true;
-    }
-    function nextSlides() {
-        currentSlide++;
-        if (currentSlide >= totalSlides) {
-            currentSlide = 0; // Reinicia para a primeira imagem quando chegar à última
-        }
-        showSlides();
-    }
-    function prevSlides() {
-        currentSlide--;
-        if (currentSlide < 0) {
-            currentSlide = totalSlides - 1;
-        }
-        showSlides();
-    }
-    prevBtn.addEventListener('click', () => {
-        prevSlides();
-    });
-    nextBtn.addEventListener('click', () => {
-        nextSlides();
-    });
-    radioButtons.forEach((radioButton, index) => {
-        radioButton.addEventListener('click', () => {
-            currentSlide = index;
-            showSlides();
-        });
-    });
-    showSlides();
-}
 function adoptModalEvents() {
     const applyButton = document.querySelector('.wanna-adopt');
     const emailInput = document.getElementById('email-modal-adopt');
@@ -116,24 +71,29 @@ function adoptModalEvents() {
     const dobError = document.getElementById('dob-error');
     const checkboxError = document.getElementById('checkbox-error');
     function DaySelect() {
-        for (let day = 1; day <= 31; day++) {
-            const option = new Option(day.toString(), day.toString());
-            daySelect.appendChild(option);
-        }
+        if (daySelect)
+            for (let day = 1; day <= 31; day++) {
+                const option = new Option(day.toString(), day.toString());
+                daySelect.appendChild(option);
+            }
     }
     function MonthSelect() {
-        const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-        for (let i = 0; i < months.length; i++) {
-            const option = new Option(months[i], (i + 1).toString());
-            monthSelect.appendChild(option);
+        if (monthSelect) {
+            const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+            for (let i = 0; i < months.length; i++) {
+                const option = new Option(months[i], (i + 1).toString());
+                monthSelect.appendChild(option);
+            }
         }
     }
     function YearSelect() {
-        const currentYear = new Date().getFullYear();
-        const startYear = 1900;
-        for (let year = currentYear; year >= startYear; year--) {
-            const option = new Option(year.toString(), year.toString());
-            yearSelect.appendChild(option);
+        if (yearSelect) {
+            const currentYear = new Date().getFullYear();
+            const startYear = 1900;
+            for (let year = currentYear; year >= startYear; year--) {
+                const option = new Option(year.toString(), year.toString());
+                yearSelect.appendChild(option);
+            }
         }
     }
     DaySelect();
@@ -165,11 +125,13 @@ function adoptModalEvents() {
         }
         return validation;
     }
-    applyButton.addEventListener('click', () => {
-        if (validate()) {
-            window.location.href = 'sucess-page.html';
-        }
-    });
+    if (applyButton) {
+        applyButton.addEventListener('click', () => {
+            if (validate()) {
+                window.location.href = 'sucess-page.html';
+            }
+        });
+    }
 }
 function donateModalEvents() {
     const emailInput = document.getElementById('email-modal-donate');
@@ -200,15 +162,69 @@ function donateModalEvents() {
         }
         return validation;
     }
-    donateButton.addEventListener('click', () => {
-        if (validate()) {
-            window.location.href = 'sucess-page.html';
+    if (donateButton) {
+        donateButton.addEventListener('click', () => {
+            if (validate()) {
+                window.location.href = 'sucess-page.html';
+            }
+        });
+    }
+}
+function carouselEvents() {
+    const prevBtn = document.querySelector('.arrow.left');
+    const nextBtn = document.querySelector('.arrow.right');
+    const slides = document.querySelectorAll('.carousel-slide');
+    const radioButtons = document.querySelectorAll('input[name="carousel-radio"]');
+    const totalSlides = slides.length;
+    const slidesPerView = 4;
+    let currentSlide = 0;
+    function showSlides() {
+        slides.forEach((slide, index) => {
+            let newIndex = (index + currentSlide) % totalSlides;
+            if (newIndex < 0) {
+                newIndex = totalSlides + newIndex;
+            }
+            slide.style.display = 'block';
+            slide.style.order = ((index - currentSlide + totalSlides) % totalSlides + slidesPerView) % slidesPerView + '';
+        });
+        if (radioButtons.length === 0) {
+            return;
         }
+        radioButtons[currentSlide].checked = true;
+    }
+    function nextSlides() {
+        currentSlide++;
+        if (currentSlide >= totalSlides) {
+            currentSlide = 0; // Reinicia para a primeira imagem quando chegar à última
+        }
+        showSlides();
+    }
+    function prevSlides() {
+        currentSlide--;
+        if (currentSlide < 0) {
+            currentSlide = totalSlides - 1;
+        }
+        showSlides();
+    }
+    if (prevBtn && nextBtn) {
+        prevBtn.addEventListener('click', () => {
+            prevSlides();
+        });
+        nextBtn.addEventListener('click', () => {
+            nextSlides();
+        });
+    }
+    radioButtons.forEach((radioButton, index) => {
+        radioButton.addEventListener('click', () => {
+            currentSlide = index;
+            showSlides();
+        });
     });
+    showSlides();
 }
 document.addEventListener('DOMContentLoaded', () => {
-    carouselEvents();
     buttonEvents();
-    adoptModalEvents();
     donateModalEvents();
+    adoptModalEvents();
+    carouselEvents();
 });
