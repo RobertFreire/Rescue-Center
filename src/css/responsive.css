@@ -306,6 +306,7 @@
 
     .form{
         gap: 5px;
+        width: 100%;
     }
 
     .wanna-help, .cancel-donate{

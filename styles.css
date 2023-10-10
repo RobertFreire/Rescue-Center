@@ -1027,7 +1027,15 @@ input[type="radio"]:checked+label {
     align-self: stretch;
 }
 
-.input-modal label, p{
+.input-modal label{
+    color: var(--pink, #FF3D9A);
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.input-modal p{
     color: var(--pink, #FF3D9A);
     font-family: Poppins;
     font-size: 12px;
@@ -1173,6 +1181,7 @@ input[type="radio"]:checked+label {
     align-items: center;
     gap: 8px;
     align-self: stretch;
+    justify-content: center;
 }
 
 .wanna-help{
@@ -1210,8 +1219,8 @@ input[type="radio"] {
 }
 .label-payment:before {
     content: "";
-    height: 2em;
-    width: 2em;
+    height: 1em;
+    width: 1em;
     border: 3px solid var(--color-blue-light);
     border-radius: 50%;
 }
