@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Poppins:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+    <script src="dist/app.js"></script>
+    <title>Rescue Center</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation-bar">
+            <div class="all-options">
+                <div class="left-options">
+                    <img src="src/image/Logo.png" alt="Rescue Center logo">
+                    <ul class="nav-items">
+                        <li>Rescue Center</li>
+                        <li>Apply to Adopt</li>
+                        <li>Volunteer</li>
+                        <li>Ways to give</li>
+                        <li>Events</li>
+                    </ul>
+                </div>
+                <div class="right-options">
+                    <p><img src="src/image/Icon-phone.svg"> 631-249-7325</p>
+                    <button class="btn donate"> <img src="src/image/Icon-heart-white.svg">Donate</button>
+                </div>
+            </div>
+        </nav>
+        <div class="diviser">
+            <hr>
+        </div>
+    </header>
+    <main class="main-screen sucess-main">
+        <section class="main-content sucess-content">
+            <div class="info-block sucess-information">
+                <button class="btn back-button sucess-button"> <img src="src/image/CaretLeft.png" alt="">Back</button>
+                <div class="text-block">
+                    <h1>Thank You For Making The Difference!</h1>
+                    <p>You've made a difference in an animal's life, giving them the opportunity for a happy and love-filled life. Thank you for supporting animal adoption and opening your heart and home to a new family member.</p>
+                </div>
+            </div>
+            <div class="sucess-dog">
+                <img src="src/image/sucess-dog.png" alt="">
+            </div>
+        </section>
+    </main>
+    <div id="donate-modal">
+        <div class="content-modal">
+            <h1>Choose your Donate </h1>
+            <div class="form donate-form">
+                <div class="input-modal email">
+                    <label for="email">EMAIL<span>*</span></label>
+                    <input type="email" id="email-modal-donate" required>
+                    <span class="error-message" id="email-error">Please enter a valid email address.</span>
+                </div>
+                <div class="input-modal money">
+                    <label for="money">HOW MUCH CAN YOU HELP?<span>*</span></label>
+                    <input type="number" id="money" min="1">
+                    <span class="error-message" id="money-error">Please enter a valid donation amount.</span>
+                </div>
+                <div class="input-modal payment">
+                    <p for="payment">PAYMENT METHOD<span>*</span></p>
+                    <div class="radios">
+                        <input type="radio" name="radio" id="pix">
+                        <label class="label-payment" for="pix">pix</label>
+
+                        <input type="radio" name="radio" id="credit-card">
+                        <label class="label-payment" for="credit-card">Credit Card</label>
+
+                        <input type="radio" name="radio" id="paypal">
+                        <label class="label-payment" for="paypal">Paypal</label>
+                    </div>
+                    <span class="error-message" id="payment-error">Please select a payment method.</span>
+                </div>
+                <button class="btn wanna-help"><img src="/src/image/Icon-heart-white.svg">I Wanna Help</button>
+                <button class="btn cancel cancel-donate" data-modal="donate-modal"><img src="/src/image/CaretLeft.png">Cancel</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
